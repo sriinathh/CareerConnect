@@ -1,0 +1,52 @@
+# =============================================================================
+# CareerConnect Root .gitignore
+# =============================================================================
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Environment and Secret Files
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Backend (careerconnect-api)
+careerconnect-api/target/
+careerconnect-api/.mvn/wrapper/maven-wrapper.jar
+careerconnect-api/*.log
+careerconnect-api/logs/
+careerconnect-api/uploads/
+careerconnect-api/.flattened-pom.xml
+
+# Frontend (careerconnect-ui)
+careerconnect-ui/node_modules/
+careerconnect-ui/dist/
+careerconnect-ui/dist-ssr/
+careerconnect-ui/*.local
+careerconnect-ui/.vite/
+careerconnect-ui/.oxlint-cache
+careerconnect-ui/npm-debug.log*
+careerconnect-ui/yarn-debug.log*
+careerconnect-ui/yarn-error.log*
+careerconnect-ui/pnpm-debug.log*
+
+# Database & Docker Volumes
+postgres-data/
+*.sql.gz
+*.dump
